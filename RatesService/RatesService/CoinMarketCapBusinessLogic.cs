@@ -16,6 +16,17 @@ namespace RatesService
             _configuration = configuration;
             _ratesContext = context;    
         }
+
+        public Tuple<List<FiatType>, string> GetAllFiatTypes()
+        {
+            var result = _ratesContext.FiatTypes.ToList();
+            if (result.Count < 1)
+            {
+                return PopulateAllFiatTypes();
+            }
+            return new Tuple<List<FiatType>, string>(result, "");
+        }
+
         public Tuple<List<FiatType>, string> PopulateAllFiatTypes()
         {
             try
@@ -34,6 +45,10 @@ namespace RatesService
 
                 foreach (var item in baseRequestResultsList.Data)
                 {
+                    if (_ratesContext.FiatTypes.Contains(item))
+                    {
+                        continue;
+                    }
                     _ratesContext.FiatTypes.Add(item);
                 }
 

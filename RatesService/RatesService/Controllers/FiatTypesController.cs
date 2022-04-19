@@ -12,8 +12,9 @@ namespace RatesService.Controllers
         {
             this.businessLogic = businessLogic;
         }
-        // GET: FiatTypesController/Create
+
         [HttpGet]
+        [Route("pulltypes")]
         public ActionResult<List<FiatType>> PopulateAllTypes()
         {
             //Would normally not use a tuple...usually use an object that maps this error message and result type
@@ -24,5 +25,17 @@ namespace RatesService.Controllers
             }
             return Ok(result.Item1);
         }
+
+        [HttpGet]
+        public ActionResult<List<FiatType>> GetAllTypes()
+        {
+            var result = businessLogic.GetAllFiatTypes();
+            if (result.Item2 != "")
+            {
+                return BadRequest(result.Item2);
+            }
+            return Ok(result.Item1);
+        }
+
     }
 }

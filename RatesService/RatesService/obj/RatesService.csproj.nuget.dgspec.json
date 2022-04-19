@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\RatesService\\RatesService\\RatesService\\RatesService.csproj": {}
+    "C:\\Users\\GysPotgieter\\source\\repos\\Final\\RatesService\\RatesService\\RatesService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\RatesService\\RatesService\\RatesService\\RatesService.csproj": {
+    "C:\\Users\\GysPotgieter\\source\\repos\\Final\\RatesService\\RatesService\\RatesService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\RatesService\\RatesService\\RatesService\\RatesService.csproj",
+        "projectUniqueName": "C:\\Users\\GysPotgieter\\source\\repos\\Final\\RatesService\\RatesService\\RatesService.csproj",
         "projectName": "RatesService",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\RatesService\\RatesService\\RatesService\\RatesService.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\RatesService\\RatesService\\RatesService\\obj\\",
+        "projectPath": "C:\\Users\\GysPotgieter\\source\\repos\\Final\\RatesService\\RatesService\\RatesService.csproj",
+        "packagesPath": "C:\\Users\\GysPotgieter\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\GysPotgieter\\source\\repos\\Final\\RatesService\\RatesService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\GysPotgieter\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }
